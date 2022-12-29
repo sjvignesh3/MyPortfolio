@@ -4,17 +4,22 @@ import LinkedinIcon from '@material-ui/icons/LinkedIn'
 import EmailIcon from '@material-ui/icons/Email'
 import '../styles/Home.css'
 import { Skills } from '../helpers/Skills'
-
+import bg from '../assets/bg1.png'
+import vicky from '../assets/vicky.png'
 function Home() {
   return (
     <div className='home'>
         <div className='about'>
-            <h2> Hi, this is Vignesh </h2>
+            <h2> Hi, I'm Vignesh </h2>
             <div className='prompt'><p> A Software developer with a passion to learn and create </p>
             <GithubIcon onClick={() => window.open('https://github.com/sjvignesh3','_blank')}/>
             <LinkedinIcon onClick={() => window.open('https://www.linkedin.com/in/vigneshwaran3/','_blank')}/>
             <EmailIcon onClick={() => window.open('mailto:sjvignesh333@gmail.com','_blank')}/>
             </div>
+        </div>
+        <div className='imgs'>
+            <img src={bg} className='bg'/>
+            <img src={vicky} className='vicky'/>
         </div>
         <div className='skills'>
             <h1>Skills</h1>
